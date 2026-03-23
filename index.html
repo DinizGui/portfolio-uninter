@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Guilherme Diniz - Desenvolvedor Web - Fundamentos da Programação Web">
+    <title>Guilherme Diniz | Portfólio - Desenvolvedor Web</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte Google para visual moderno - não é framework, apenas link externo de fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ========== MENU DE NAVEGAÇÃO ========== -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav__logo">Portfólio</a>
+            <!-- Botão hamburguer para menu mobile - visível apenas em telas pequenas -->
+            <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="#sobre" class="nav__link">Sobre mim</a></li>
+                <li><a href="#formacao" class="nav__link">Formação</a></li>
+                <li><a href="#portfolio" class="nav__link">Portfólio</a></li>
+                <li><a href="#contato" class="nav__link">Contato</a></li>
+                <!-- Botão para alternar tema escuro/claro -->
+                <li>
+                    <button class="nav__theme-btn" id="themeToggle" aria-label="Alternar tema">
+                        <span class="theme-icon theme-icon--sun">☀️</span>
+                        <span class="theme-icon theme-icon--moon">🌙</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ========== SEÇÃO 1: SOBRE MIM ========== -->
+        <section id="sobre" class="section section--hero">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Olá, eu sou <span class="hero__name">Guilherme Diniz</span></h1>
+                        <p class="hero__subtitle">Desenvolvedor Web em formação</p>
+                        <p class="hero__text">
+                            Sou apaixonado por tecnologia e estou em constante aprendizado no mundo do desenvolvimento web. 
+                            Nas horas vagas, gosto de jogar video games, assistir futebol e explorar novas tendências tecnológicas. 
+                            Acredito que a combinação de criatividade e lógica é o que faz a programação ser tão fascinante.
+                        </p>
+                        <p class="hero__hobbies">
+                            <strong>Meus hobbies:</strong> video games 🎮, futebol ⚽ e tecnologia 💻
+                        </p>
+                        <a href="#contato" class="btn btn--primary">Entre em contato</a>
+                    </div>
+                    <div class="hero__image">
+                        <div class="hero__avatar">👨‍💻</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SEÇÃO 2: FORMAÇÃO ========== -->
+        <section id="formacao" class="section">
+            <div class="container">
+                <h2 class="section__title">Formação</h2>
+                <div class="formacao-grid">
+                    <!-- Formação acadêmica -->
+                    <div class="card card--formacao">
+                        <div class="card__icon">🎓</div>
+                        <h3 class="card__title">Formação Acadêmica</h3>
+                        <ul class="card__list">
+                            <li>Engenharia de Software - UNINTER (Em andamento)</li>
+                            <li>Curso Técnico em Informática - [Instituição]</li>
+                        </ul>
+                    </div>
+                    <!-- Cursos e conhecimentos -->
+                    <div class="card card--formacao">
+                        <div class="card__icon">📚</div>
+                        <h3 class="card__title">Cursos e Conhecimentos</h3>
+                        <ul class="card__list">
+                            <li>HTML5, CSS3 e JavaScript</li>
+                            <li>Fundamentos da Programação Web</li>
+                            <li>Git e Versionamento</li>
+                            <li>Lógica de Programação</li>
+                        </ul>
+                    </div>
+                    <!-- Idiomas -->
+                    <div class="card card--formacao">
+                        <div class="card__icon">🌍</div>
+                        <h3 class="card__title">Idiomas</h3>
+                        <ul class="card__list">
+                            <li>Português - Nativo</li>
+                            <li>Inglês - Intermediário (leitura técnica)</li>
+                        </ul>
+                    </div>
+                    <!-- Objetivos profissionais -->
+                    <div class="card card--formacao card--wide">
+                        <div class="card__icon">🎯</div>
+                        <h3 class="card__title">Objetivos Profissionais</h3>
+                        <p class="card__text">
+                            Meu objetivo é me tornar um desenvolvedor full-stack de excelência, criando soluções web 
+                            que façam a diferença na vida das pessoas. Busco oportunidades para aplicar meus 
+                            conhecimentos e crescer junto com projetos desafiadores na área de tecnologia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SEÇÃO 3: PORTFÓLIO ========== -->
+        <section id="portfolio" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Portfólio</h2>
+                <p class="section__subtitle">Projetos no GitHub</p>
+                <div class="portfolio-grid">
+                    <!-- Triply -->
+                    <article class="card card--portfolio">
+                        <a href="https://github.com/DinizGui/triply" target="_blank" rel="noopener noreferrer" class="card__link">
+                            <div class="card__image-placeholder card__image-placeholder--1">
+                                <span>🔗</span>
+                            </div>
+                            <div class="card__body">
+                                <h3 class="card__title">Triply</h3>
+                                <p class="card__text">
+                                    Projeto desenvolvido com JavaScript. Acesse o repositório no GitHub para mais detalhes.
+                                </p>
+                                <div class="card__tags">
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">GitHub</span>
+                                </div>
+                                <span class="card__repo-link">Ver no GitHub →</span>
+                            </div>
+                        </a>
+                    </article>
+                    <!-- WhatsApp IA -->
+                    <article class="card card--portfolio">
+                        <a href="https://github.com/DinizGui/whatsapp-IA" target="_blank" rel="noopener noreferrer" class="card__link">
+                            <div class="card__image-placeholder card__image-placeholder--2">
+                                <span>💬</span>
+                            </div>
+                            <div class="card__body">
+                                <h3 class="card__title">WhatsApp IA</h3>
+                                <p class="card__text">
+                                    Integração de WhatsApp com Inteligência Artificial usando Node.js e JavaScript.
+                                </p>
+                                <div class="card__tags">
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <span class="card__repo-link">Ver no GitHub →</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SEÇÃO 4: CONTATO ========== -->
+        <section id="contato" class="section">
+            <div class="container container--narrow">
+                <h2 class="section__title">Contato</h2>
+                <p class="section__subtitle">Envie uma mensagem e responderei o mais breve possível</p>
+                
+                <!-- Mensagem de sucesso - exibida após envio do formulário -->
+                <div class="form-success" id="formSuccess">
+                    Mensagem enviada com sucesso!
+                </div>
+
+                <form class="form" id="contactForm">
+                    <div class="form__group">
+                        <label for="nome" class="form__label">Nome *</label>
+                        <input type="text" id="nome" name="nome" class="form__input" placeholder="Seu nome completo" required>
+                        <span class="form__error" id="nomeError"></span>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">E-mail *</label>
+                        <input type="email" id="email" name="email" class="form__input" placeholder="seu@email.com" required>
+                        <span class="form__error" id="emailError"></span>
+                    </div>
+                    <div class="form__group">
+                        <label for="mensagem" class="form__label">Mensagem *</label>
+                        <textarea id="mensagem" name="mensagem" class="form__input form__textarea" placeholder="Digite sua mensagem..." rows="5" required></textarea>
+                        <span class="form__error" id="mensagemError"></span>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== RODAPÉ ========== -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">© 2025 - Guilherme Diniz | Portfólio Pessoal | Fundamentos da Programação Web - UNINTER</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
